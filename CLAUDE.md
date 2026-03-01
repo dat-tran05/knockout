@@ -138,4 +138,4 @@ Frontend currently simulates vitals; not yet wired to backend API.
 
 ## Test patient
 
-All seed data is for Lily Chen (TKOS, DOB 2007-04-22). Data is parsed from real medical records records and ECG PDFs. The `report/sample_data.py` has older hardcoded data that is partially outdated (lists flecainide, wrong age/HR) — prefer `get_report_data()` for accurate values.
+All seed data is for a fictional TKOS patient (Lily Chen, DOB 2007-04-22). The `report/sample_data.py` has older hardcoded data that is partially outdated (lists flecainide, wrong age/HR) — prefer `get_report_data()` for accurate values.

@@ -1,5 +1,5 @@
 """
-Hardcoded sample data for a TKOS patient (Lily).
+Hardcoded sample data for a synthetic TKOS patient.
 
 This simulates what the real database would provide once the Episode model
 and data streams are wired up. All values are clinically plausible for a

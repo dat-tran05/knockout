@@ -117,7 +117,7 @@ report/
 └── examples/          # Generated example outputs
 ```
 
-The sample data simulates a 90-day period for a TKOS patient (Lily) on nadolol + flecainide with an ICD. When the real database layer is ready, swap `sample_data` for actual queries — `builder.py` works unchanged.
+The sample data simulates a 90-day period for a synthetic TKOS patient on nadolol + flecainide with an ICD. When the real database layer is ready, swap `sample_data` for actual queries — `builder.py` works unchanged.
 
 ## Database
 

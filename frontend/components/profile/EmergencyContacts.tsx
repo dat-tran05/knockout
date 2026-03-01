@@ -32,8 +32,8 @@ const initialCareTeam: Clinician[] = [
 ];
 
 const initialGuardians: Guardian[] = [
-  { name: "Ravi Chen", relationship: "Father", phone: "(555) 301-4422" },
-  { name: "Sunita Chen", relationship: "Mother", phone: "(555) 301-4423" },
+  { name: "David Chen", relationship: "Father", phone: "(555) 301-4422" },
+  { name: "Karen Chen", relationship: "Mother", phone: "(555) 301-4423" },
   { name: "Sophie Park", relationship: "Best Friend", phone: "(555) 718-2290" },
 ];
 
