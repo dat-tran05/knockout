@@ -52,7 +52,7 @@ export const EPISODE_INSIGHTS: EpisodeInsight[] = [
       hrvPct: -43,
       drugLevels: [
         { drugName: "nadolol", brandName: "Corgard", levelPct: 28, status: "trough", halfLifeHours: 22 },
-        { drugName: "flecainide", brandName: "Tambocor", levelPct: 41, status: "declining", halfLifeHours: 15 },
+        { drugName: "flecainide", brandName: "Tambocor", levelPct: 41, status: "declining", halfLifeHours: 14 },
         { drugName: "magnesium oxide", brandName: "Mag-Ox 400", levelPct: null, status: "taken", halfLifeHours: null },
       ],
     },
@@ -69,7 +69,7 @@ export const EPISODE_INSIGHTS: EpisodeInsight[] = [
       hrvPct: -33,
       drugLevels: [
         { drugName: "nadolol", brandName: "Corgard", levelPct: 45, status: "declining", halfLifeHours: 22 },
-        { drugName: "flecainide", brandName: "Tambocor", levelPct: 32, status: "declining", halfLifeHours: 15 },
+        { drugName: "flecainide", brandName: "Tambocor", levelPct: 32, status: "declining", halfLifeHours: 14 },
         { drugName: "magnesium oxide", brandName: "Mag-Ox 400", levelPct: null, status: "taken", halfLifeHours: null },
       ],
     },
@@ -84,7 +84,7 @@ export const EPISODE_INSIGHTS: EpisodeInsight[] = [
       hrvPct: -48,
       drugLevels: [
         { drugName: "nadolol", brandName: "Corgard", levelPct: 25, status: "trough", halfLifeHours: 22 },
-        { drugName: "flecainide", brandName: "Tambocor", levelPct: 18, status: "trough", halfLifeHours: 15 },
+        { drugName: "flecainide", brandName: "Tambocor", levelPct: 18, status: "trough", halfLifeHours: 14 },
         { drugName: "magnesium oxide", brandName: "Mag-Ox 400", levelPct: null, status: "taken", halfLifeHours: null },
       ],
     },
@@ -102,7 +102,7 @@ export const EPISODE_INSIGHTS: EpisodeInsight[] = [
       hrvPct: -24,
       drugLevels: [
         { drugName: "nadolol", brandName: "Corgard", levelPct: 52, status: "therapeutic", halfLifeHours: 22 },
-        { drugName: "flecainide", brandName: "Tambocor", levelPct: 58, status: "therapeutic", halfLifeHours: 15 },
+        { drugName: "flecainide", brandName: "Tambocor", levelPct: 58, status: "therapeutic", halfLifeHours: 14 },
         { drugName: "magnesium oxide", brandName: "Mag-Ox 400", levelPct: null, status: "taken", halfLifeHours: null },
       ],
     },
@@ -117,15 +117,15 @@ export const EPISODE_INSIGHTS: EpisodeInsight[] = [
       hrvPct: -38,
       drugLevels: [
         { drugName: "nadolol", brandName: "Corgard", levelPct: 29, status: "trough", halfLifeHours: 22 },
-        { drugName: "flecainide", brandName: "Tambocor", levelPct: 22, status: "trough", halfLifeHours: 15 },
+        { drugName: "flecainide", brandName: "Tambocor", levelPct: 22, status: "trough", halfLifeHours: 14 },
         { drugName: "magnesium oxide", brandName: "Mag-Ox 400", levelPct: null, status: "not_taken", halfLifeHours: null },
       ],
     },
     triggerMatches: [
       { triggerType: "Sleep deprivation", source: "Clinical note" },
     ],
-    narrative: "HR 90 bpm is 22% above resting average, inside the ICD gap. HRV 26 ms is 38% below baseline. Both nadolol (29%) and flecainide (22%) are in trough. Mag-Ox 400 was not taken this day. Prior night: 5h 30m sleep (poor). One known trigger matched: sleep deprivation. Dual drug trough + missed supplement + poor sleep.",
-    contextNarrative: "Heart rate rose steadily from 73 to 90 bpm as medication levels declined. Both drugs entered trough simultaneously around hour 16 post-dose. HRV mirrored the decline, dropping from 36 to 26 ms. Sleep deficit from the prior night (5h 30m, poor quality) likely contributed to reduced autonomic resilience. Mag-Ox 400 dose was missed.",
+    narrative: "HR 90 bpm is 22% above resting average, inside the ICD gap. HRV 26 ms is 38% below baseline. Both nadolol (29%) and flecainide (22%) are in trough. Magnesium supplement was not taken this day. Prior night: 5h 30m sleep (poor). One known trigger matched: sleep deprivation. Dual drug trough + missed supplement + poor sleep.",
+    contextNarrative: "Heart rate rose steadily from 73 to 90 bpm as medication levels declined. Both drugs entered trough simultaneously around hour 16 post-dose. HRV mirrored the decline, dropping from 36 to 26 ms. Sleep deficit from the prior night (5h 30m, poor quality) likely contributed to reduced autonomic resilience. Magnesium dose was missed.",
   },
   {
     id: 6,
@@ -134,7 +134,7 @@ export const EPISODE_INSIGHTS: EpisodeInsight[] = [
       hrvPct: -29,
       drugLevels: [
         { drugName: "nadolol", brandName: "Corgard", levelPct: 38, status: "declining", halfLifeHours: 22 },
-        { drugName: "flecainide", brandName: "Tambocor", levelPct: 45, status: "declining", halfLifeHours: 15 },
+        { drugName: "flecainide", brandName: "Tambocor", levelPct: 45, status: "declining", halfLifeHours: 14 },
         { drugName: "magnesium oxide", brandName: "Mag-Ox 400", levelPct: null, status: "taken", halfLifeHours: null },
       ],
     },

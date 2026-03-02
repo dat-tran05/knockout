@@ -250,7 +250,7 @@ DOSES = {
 PATIENT = {
     "patient_id": "TKOS-001",
     "patient_name": "Lily",
-    "age": 7,
+    "age": 18,
     "diagnosis": "Triadin Knockout Syndrome (TKOS)",
     "icd": True,
     "hrv_baseline_ms": 35.0,

@@ -56,11 +56,11 @@ function buildTimelineData(
     }
     nadolol = Math.min(100, nadolol);
 
-    // Flecainide: once daily at 09:00, half-life 15h
-    const spiroDose = new Date(d);
-    spiroDose.setHours(9, 0, 0, 0);
-    if (spiroDose > d) spiroDose.setDate(spiroDose.getDate() - 1);
-    const flecainide = decayConcentration(spiroDose, 15, d);
+    // Flecainide: BID at 08:00 and 20:00, half-life 14h
+    const flecDose = new Date(d);
+    flecDose.setHours(8, 0, 0, 0);
+    if (flecDose > d) flecDose.setDate(flecDose.getDate() - 1);
+    const flecainide = decayConcentration(flecDose, 14, d);
 
     points.push({
       time: t,
