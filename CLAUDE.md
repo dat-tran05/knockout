@@ -13,7 +13,6 @@ Knockout — a cardiac monitoring platform for Triadin Knockout Syndrome (TKOS),
 cd backend
 uv sync                          # install dependencies (creates .venv)
 uv run python server.py          # FastAPI on port 8080, auto-creates knockout.db
-uv run python -m report.pdf      # generate example PDF + JSON to report/examples/
 ```
 
 ### Frontend
@@ -33,8 +32,30 @@ cd backend && rm -f knockout.db && uv run python -c "from database import init_d
 **After merges:** If `knockout.db` has merge conflicts, resolve by running `init_db()` — it creates missing tables (`safe=True`) without touching existing data. `sqlite3 knockout.db ".tables"` to verify.
 
 ### Synthetic demo data
+
+The app needs synthetic data to function — without it the DB only has clinical seed data and all stream tables are empty. Generate after every DB reset:
+
 ```bash
-curl -X POST http://localhost:8080/synthetic/generate   # or via the app
+# 1. Start the server (required — synthetic endpoint is an API route)
+cd backend && uv run python server.py
+
+# 2. In another terminal, generate 7 days of demo data
+curl -X POST http://localhost:8080/synthetic/generate
+```
+
+This populates:
+- **2016 HR readings** (5-min intervals, 7 days) — `HeartRateReading`
+- **2016 HRV readings** (matching) — `HRVReading`
+- **6 sleep records** (one per night) — `SleepRecord`
+- **336 temperature readings** — `TemperatureReading`
+- **336 weather readings** — `WeatherReading`
+- **6 episodes** (one-tap symptom captures with notes) — `Episode`
+
+Without this data: dashboards are blank, baselines return empty, episodes page is empty, and report generation has no stream data to analyze.
+
+### Regenerate report examples
+```bash
+cd backend && uv run python -m report.pdf   # outputs PDF + JSON to report/examples/
 ```
 
 ## Documentation

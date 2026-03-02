@@ -38,7 +38,7 @@
     { "trigger_type": "playing sports", "source": "ICD discharge 2015", "confidence": "documented", "notes": "ICD shock during recreational sports" },
     { "trigger_type": "cycling", "source": "ICD discharge 2/2016", "confidence": "documented", "notes": "ICD shock while riding a bicycle" },
     { "trigger_type": "sleep deprivation", "source": "clinical note", "confidence": "patient_reported", "notes": "Symptoms more pronounced after fewer than 6 hours of sleep" },
-    { "trigger_type": "physical exertion / walking", "source": "clinical note", "confidence": "patient_reported", "notes": "Symptoms exacerbated by walking and physical exertion" }
+    { "trigger_type": "physical exertion / walking", "source": "clinical note", "confidence": "patient_reported", "notes": "Symptoms exacerbated by sustained physical activity" }
   ],
 
   "medications": [
