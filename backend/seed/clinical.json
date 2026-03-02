@@ -24,9 +24,7 @@
     { "diagnosis": "Syncope", "noted_date": "2016-05-12", "notes": null },
     { "diagnosis": "Cardiac Arrest", "noted_date": null, "notes": "History of cardiac arrest with ICD discharges" },
     { "diagnosis": "Atrial Fibrillation", "noted_date": "2023-02-08", "notes": null },
-    { "diagnosis": "Atrial Fibrillation with Rapid Ventricular Response", "noted_date": "2025-01-10", "notes": "ICD shock delivered (31J)" },
-    { "diagnosis": "", "noted_date": "2026-02-25", "notes": null },
-    { "diagnosis": "", "noted_date": "2025-01-10", "notes": null }
+    { "diagnosis": "Atrial Fibrillation with Rapid Ventricular Response", "noted_date": "2025-01-10", "notes": "ICD shock delivered (31J)" }
   ],
 
   "allergies": [

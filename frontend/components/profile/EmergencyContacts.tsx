@@ -27,8 +27,8 @@ interface Guardian {
 }
 
 const initialCareTeam: Clinician[] = [
-  { name: "Dr. Rachel Torres", role: "Pediatric Cardiologist", email: "michael.chen@childrens.org" },
-  { name: "Dr. James Liu", role: "Electrophysiologist", email: "sarah.williams@heartcenter.org" },
+  { name: "Dr. Rachel Torres", role: "Pediatric Cardiologist", email: "rachel.torres@childrens.org" },
+  { name: "Dr. James Liu", role: "Electrophysiologist", email: "james.liu@heartcenter.org" },
 ];
 
 const initialGuardians: Guardian[] = [
